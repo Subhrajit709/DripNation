@@ -215,9 +215,11 @@ export default function CheckoutPage() {
                     type="text"
                     placeholder="1234 5678 9012 3456"
                     value={formData.cardNumber}
-                    onChange={(e) => setFormData({ ...formData, cardNumber: e.target.value.replace(/\s/g, "") })}
+                    onChange={(e) =>
+                      setFormData({ ...formData, cardNumber: e.target.value.replace(/\s/g, "") })
+                    }
                     className="w-full px-4 py-3 bg-background border border-secondary/30 rounded-lg focus:border-secondary focus:outline-none"
-                    maxLength="19"
+                    maxLength={19}
                     required
                   />
                 </div>
@@ -231,10 +233,11 @@ export default function CheckoutPage() {
                       value={formData.expiry}
                       onChange={(e) => setFormData({ ...formData, expiry: e.target.value })}
                       className="w-full px-4 py-3 bg-background border border-secondary/30 rounded-lg focus:border-secondary focus:outline-none"
-                      maxLength="5"
+                      maxLength={5}
                       required
                     />
                   </div>
+
                   <div>
                     <label className="block font-semibold mb-2">CVV</label>
                     <input
@@ -243,7 +246,7 @@ export default function CheckoutPage() {
                       value={formData.cvv}
                       onChange={(e) => setFormData({ ...formData, cvv: e.target.value })}
                       className="w-full px-4 py-3 bg-background border border-secondary/30 rounded-lg focus:border-secondary focus:outline-none"
-                      maxLength="3"
+                      maxLength={3}
                       required
                     />
                   </div>
