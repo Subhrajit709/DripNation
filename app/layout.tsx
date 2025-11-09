@@ -53,9 +53,6 @@ export default function RootLayout({
             </Link>
             <Link href="/cart" className="p-2 hover:bg-muted rounded-lg transition-all relative">
               <ShoppingCart size={20} />
-              <span className="absolute -top-1 -right-1 bg-accent text-accent-foreground text-xs rounded-full w-5 h-5 flex items-center justify-center">
-                0
-              </span>
             </Link>
           </div>
         </div>
