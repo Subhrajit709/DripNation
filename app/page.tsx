@@ -169,7 +169,7 @@ export default function Landing() {
             Get exclusive access to limited editions and personalized recommendations
           </p>
           <Link
-            href="/signup"
+            href="/auth/signup"
             className="inline-flex items-center gap-2 px-8 py-3 bg-secondary text-secondary-foreground rounded-lg font-semibold hover:shadow-lg transition-all hover:scale-105"
           >
             Sign Up Today
