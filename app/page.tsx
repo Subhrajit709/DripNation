@@ -26,40 +26,6 @@ export default function Landing() {
 
   return (
     <div className="min-h-screen bg-background text-foreground">
-      {/* Navigation */}
-      <nav className="fixed top-0 z-50 w-full border-b border-border bg-background/80 backdrop-blur-md">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex items-center justify-between">
-          <Link href="/" className="text-xl font-black text-primary">
-            DRIP-NATION
-          </Link>
-          <div className="hidden md:flex items-center gap-6">
-            <Link href="/shop" className="text-sm font-medium hover:text-primary transition-colors">
-              Shop
-            </Link>
-            <Link href="/ar-try-on" className="text-sm font-medium hover:text-primary transition-colors">
-              AR Try-On
-            </Link>
-            <Link href="/recommendations" className="text-sm font-medium hover:text-primary transition-colors">
-              AI Recommendations
-            </Link>
-          </div>
-          <div className="flex items-center gap-4">
-            <ThemeToggle />
-            <button className="p-2 hover:bg-muted rounded-lg transition-all">
-              <Search size={20} />
-            </button>
-            <Link href="/dashboard" className="p-2 hover:bg-muted rounded-lg transition-all">
-              <User size={20} />
-            </Link>
-            <Link href="/cart" className="p-2 hover:bg-muted rounded-lg transition-all relative">
-              <ShoppingCart size={20} />
-              <span className="absolute -top-1 -right-1 bg-accent text-accent-foreground text-xs rounded-full w-5 h-5 flex items-center justify-center">
-                0
-              </span>
-            </Link>
-          </div>
-        </div>
-      </nav>
 
       {/* Hero Section */}
       <section className="pt-32 pb-20 px-4 relative overflow-hidden">
@@ -145,7 +111,7 @@ export default function Landing() {
                     alt={product.name}
                     className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent opacity-0 group-hover:opacity-100 transition-all flex items-end p-4">
+                  <div className="absolute inset-0 bg-linear-to-t from-black/30 to-transparent opacity-0 group-hover:opacity-100 transition-all flex items-end p-4">
                     <button className="w-full py-2 bg-primary text-primary-foreground rounded-lg font-semibold hover:bg-primary/90 transition-all text-sm">
                       Quick View
                     </button>
